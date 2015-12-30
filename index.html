@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Triangular pattern image converter</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Triangular pattern image converter</h1>
+    <div class="form">
+      <div class="col">
+        Select File (URL must be blank):
+        <input type="file" id="image" />
+        or Type an URL:
+        <input type="text" id="url" value="http://i.imgur.com/wbcOofa.png"/>
+        <button id="draw">Draw!</button>
+      </div>
+      <div class="col">
+        Image Reduction Scale (bigger number = smaller image):
+        <input type="text" id="imgscale" value="50" />
+        Triangle Scale:
+        <input type="text" id="triscale" value="31"/>
+        Triangle Borders:
+        <input type="checkbox" id="borders" />
+      </div>
+    </div>
+    <canvas id="paper" resize="true" data-paper-resize="true"></canvas>
+    <div class="footer">2015 - Moisés Cachay</div>
+
+    <script src='js/paper-full.min.js'></script>
+    <script src="js/application.js"></script>
+  </body>
+</html>
