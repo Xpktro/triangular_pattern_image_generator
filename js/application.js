@@ -79,6 +79,7 @@ function draw(imgElem) {
         borderRectangle.fillColor.alpha = .3;
         triangle.subtract(borderRectangle);
         triangle.visible = false;
+        borderRectangle.visible = false;
       }
     }
   }
