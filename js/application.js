@@ -47,8 +47,8 @@ function draw(imgElem) {
   baseImage.position = view.center;
   baseImage.size = new Size(baseImage.size.width / imageScale, baseImage.size.height / imageScale);
 
-  var up = true;
   for (var y = 0; y < baseImage.height; y++) {
+    var up = (y % 2 == 0) || document.getElementById('trialign').checked;
     for(var x = 0; x < baseImage.width; x++) {
       // For every pixel in the image, a triangle is created.
       var color = baseImage.getPixel(x, y);
